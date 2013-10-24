@@ -1,4 +1,4 @@
-[MOOTOMBO!Framework](http://devxive.com) [![Build Status](https://secure.travis-ci.org/mootombo/framework.png?branch=master)](https://travis-ci.org/mootombo/framework)
+[MOOTOMBO!Framework](http://devxive.com) [![Build Status](https://secure.travis-ci.org/mootombo/Framework.png?branch=master)](https://travis-ci.org/mootombo/Framework)
 ====
 
 ## What is the MOOTOMBO!Framework ?
