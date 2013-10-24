@@ -1,7 +1,7 @@
 [MOOTOMBO!Framework](http://devxive.com) [![Build Status](https://secure.travis-ci.org/mootombo/Framework.png?branch=master)](https://travis-ci.org/mootombo/Framework)
 ====
 
-## What is the MOOTOMBO!Framework ?
+### What is the MOOTOMBO!Framework ?
 
 The `MOOTOMBO!Framework` is a PHP, Javascript and CSS collection for writing web applications. It is free and open source software, distributed under the GNU General Public License version 2 or later.
 
@@ -14,14 +14,14 @@ View the MOOTOMBO!Framework API Documentation at [http://mootombo.github.com/fra
 You can discuss MOOTOMBO!Framework development by joining the Forum at [http://devxive.com/forum/mootombo/framework](http://devxive.com/forum/mootombo/framework).
 
 
-## Requirements
+### Requirements
 
 - PHP 5.3.10
 - Each package has their own requirements as well. Ex: The Image package requires the PHP GD extension. Please see the `composer.json` in each package repository for these requirements.
 - Applications implementing the MOOTOMBO!Framework must implement the 'MFWPATH_ROOT' constant which should be the root path of the application.
 
 
-## Installation
+### Installation
 
 Just install the package as you would install any other package in MOOTOMBO!WebOS. The simplest way to get up and running with the MOOTOMBO!Framework is to use the MOOTOMBO!WebOS - Developer Edition.
 
@@ -31,17 +31,17 @@ Just install the package as you would install any other package in MOOTOMBO!WebO
 `git clone git://github.com/mootombo/framework.git`
 
 
-## Documentation
+### Documentation
 
 General documentation about the MOOTOMBO!Framework can be found under the [/docs](docs/) folder of this repository. In addition, each package has a own documentation in a `README.md` file.
 
 
-## Reporting Bugs and Issue
+### Reporting Bugs and Issue
 
 Bugs and issues found in the MOOTOMBO!Framework code can be reported on the [Issues](https://github.com/mootombo/framework/issues) list. Even for distributed packages where the code is in another repo, please submit issues to this issue tracker.
 
 
-## Contributing
+### Contributing
 
 All kind of contributions are welcome. Please read about how to contribute [here](CONTRIBUTING.md).
 
