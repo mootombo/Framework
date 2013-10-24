@@ -14,7 +14,7 @@
  */
 
 // no direct access
-defined('_JEXEC') or die();
+defined('_MFWRA') or die;
  
 // Define version
 if ( !defined('MFWVERSION') ) {

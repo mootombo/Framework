@@ -14,7 +14,7 @@
  */
 
 // no direct access
-defined('_JEXEC') or die();
+defined('_MFWRA') or die;
  
 /**
  * MOOTOMBO!Framework Factory class
