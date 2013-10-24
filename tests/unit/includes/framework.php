@@ -1,5 +1,5 @@
 // no direct access
-defined('_NFWRA') or die;
+defined('_MFWRA') or die;
 
 // MOOTOMBO!RDK include
-require_once MPATH_LIBRARIES.'/mrdk.php';
+require_once MFWPATH_LIBRARIES.'/mfw.php';
