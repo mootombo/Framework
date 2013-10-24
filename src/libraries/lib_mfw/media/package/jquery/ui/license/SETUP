@@ -1,0 +1,48 @@
+UI Core - A required dependency, contains basic functions and initializers.
+==========
+Core:		The core of jQuery UI, required for all interactions and widgets.
+Widget:	Provides a factory for creating stateful widgets with a common API.
+Mouse:		Abstracts mouse-based interactions to assist in creating certain widgets.
+Position:	Positions elements relative to other elements.
+
+
+Interactions - These add basic behaviors to any element and are used by many components below.
+==========
+Draggable:	Enables dragging functionality for any element.
+Droppable:	Enables drop targets for draggable elements.
+Resizable:	Enables resize functionality for any element.
+Selectable:	Allows groups of elements to be selected with the mouse.
+Sortable:	Enables items in a list to be sorted using the mouse.
+
+
+Widgets - Full-featured UI Controls - each has a range of options and is fully themeable.
+==========
+Accordion:	Displays collapsible content panels for presenting information in a limited amount of space.
+Autocomplete:	Lists suggested words as the user is typing.
+Button:	Enhances a form with themable buttons.
+Datepicker:	Displays a calendar from an input or inline for selecting dates.
+Dialog:	Displays customizable dialog windows.
+Menu:		Creates nestable menus.
+Progressbar:	Displays a status indicator for loading state, standard percentage, and other progress indicators.
+Slider:	Displays a flexible slider with ranges and accessibility via keyboard.
+Spinner:	Displays buttons to easily input numbers via the keyboard or mouse.
+Tabs:		Transforms a set of container elements into a tab structure.
+Tooltip:	Shows additional information for any element on hover or focus.
+
+
+Effects - A rich effect API and ready to use effects.
+==========
+Effects:	CoreExtends the internal jQuery effects. Includes morphing and easing. Required by all other effects.
+Blind:		EffectBlinds the element.
+Bounce:	EffectBounces an element horizontally or vertically n times.
+Clip:		EffectClips the element on and off like an old TV.
+Drop:		EffectMoves an element in one direction and hides it at the same time.
+Explode:	EffectExplodes an element in all directions into n pieces. Implodes an element to its original wholeness.
+Fade:		EffectFades an element.
+Fold:		EffectFolds an element first horizontally and then vertically.
+Highlight:	EffectHighlights the background of an element in a defined color for a custom duration.
+Pulsate:	EffectPulsates an element n times by changing the opacity to zero and back.
+Scale:		EffectGrows or shrinks an element and its content. Restores an elemnt to its original size.
+Shake:		EffectShakes an element horizontally or vertically n times.
+Slide:		EffectSlides an element in and out of the viewport.
+Transfer:	EffectDisplays a transfer effect from one element to another.
