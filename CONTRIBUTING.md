@@ -1,8 +1,8 @@
-# Contributing to the MOOTOMBO!RDK - The Rapid Development Kit for MOOTOMBO Software Products (SP's)
+# Contributing to the MOOTOMBO!Framework - A PHP, Javascript and CSS Collection for MOOTOMBO Software Products (SP's)
 
 Pull requests are merged via Github, you can find the documentation about how to fork a repository and start contributing to MOOTOMBO here [https://help.github.com/articles/fork-a-repo](https://help.github.com/articles/fork-a-repo).
 
-All contributions are welcome to be submitted for review for inclusion in the MOOTOMBO!RDK, but before they will be accepted, we ask that you follow these simple steps:
+All contributions are welcome to be submitted for review for inclusion in the MOOTOMBO!Framework, but before they will be accepted, we ask that you follow these simple steps:
 
 * [MOOTOMBO LCA - Legal Contributor Agreement](#legal-contributor-agreement)
 * [Coding standards](#coding-standards)
@@ -11,17 +11,17 @@ All contributions are welcome to be submitted for review for inclusion in the MO
 
 Please be patient as not all items will be tested or reviewed immediately by a MOOTOMBO maintainer team.
 
-Also be receptive to feedback about your additions or changes to the RDK. The maintainer team and other community members may make suggestions or ask questions about your change. This is part of the review process, and helps everyone to understand what is happening, why it is happening, and potentially optimize your code.
+Also be receptive to feedback about your additions or changes to the Framework. The maintainer team and other community members may make suggestions or ask questions about your change. This is part of the review process, and helps everyone to understand what is happening, why it is happening, and potentially optimize your code.
 
-If you need some ideas about what you can do, you will find tasks on the [Issues](https://github.com/mootombo/rdk/issues) list. All tasks are allocated to a milestone, usually representing a quarter of the calendar year. The milestones should be used as a guide to when various tasks should be done, but there is generally no problem doing tasks out of order (providing there are no dependency problems).
+If you need some ideas about what you can do, you will find tasks on the [Issues](https://github.com/mootombo/framework/issues) list. All tasks are allocated to a milestone, usually representing a quarter of the calendar year. The milestones should be used as a guide to when various tasks should be done, but there is generally no problem doing tasks out of order (providing there are no dependency problems).
 
-All tasks are labelled into broad groups. For example, the [backlog](https://github.com/mootombo/rdk/issues?labels=backlog&page=1&state=open) label shows all the tasks that need to be competed to "catch up" on work that was missed out in previous versions of the RDK.
+All tasks are labelled into broad groups. For example, the [backlog](https://github.com/mootombo/framework/issues?labels=backlog&page=1&state=open) label shows all the tasks that need to be competed to "catch up" on work that was missed out in previous versions of the Framework.
 
 ## MOOTOMBO LCA - Legal Contributor Agreement
 
-Ideally, everybody who contributes to the MOOTOMBO!RDK, or any other MOOTOMBO or devXive supported project for that matter, should sign a [Legal Contributor Agreement](http://developer.walz.ag/legal-contributor-agreements.html) (LCA). 
+Ideally, everybody who contributes to the MOOTOMBO!Framework, or any other MOOTOMBO or devXive supported project for that matter, should sign a [Legal Contributor Agreement](http://developer.walz.ag/legal-contributor-agreements.html) (LCA).
 
-But, we are aware that some contributors will not want to take the extra effort, especially for one-time contributors of modest amounts of code. As a compromise, the MOOTOMBO Project requires a LCA from anybody who makes a significant contribution to MOOTOMBO or any other devXive project. "Significant" is, of course, a judgment call.  As a general guideline, if you as an individual have contributed or intend to contribute over 100 lines of code to the MOOTOMBO!RDK, we need a LCA. 
+But, we are aware that some contributors will not want to take the extra effort, especially for one-time contributors of modest amounts of code. As a compromise, the MOOTOMBO Project requires a LCA from anybody who makes a significant contribution to MOOTOMBO or any other devXive project. "Significant" is, of course, a judgment call.  As a general guideline, if you as an individual have contributed or intend to contribute over 100 lines of code to the MOOTOMBO!Framework, we need a LCA.
 
 If you are contributing as an employee of a company (that is, the work you are contributing was done on company time) then we need a LCA with your company no matter how small the contribution is. 
 
@@ -84,7 +84,7 @@ The PHPUnit manual contains all the documentation you need in order to install i
 
 ## Documentation
 
-Documentation for each package in the MOOTOMBO!RDK can be found in the `README.md` file in the main package folder. The file uses Github flavoured Markdown format. You can find out more about this format at [http://daringfireball.net/projects/markdown/syntax](http://daringfireball.net/projects/markdown/syntax).
+Documentation for each package in the MOOTOMBO!Framework can be found in the `README.md` file in the main package folder. The file uses Github flavoured Markdown format. You can find out more about this format at [http://daringfireball.net/projects/markdown/syntax](http://daringfireball.net/projects/markdown/syntax).
 
 When contributing new features to existing packages, please add notes about the new features to the existing `README.md` files in the packages you change.
 
