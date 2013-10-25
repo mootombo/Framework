@@ -44,6 +44,7 @@ abstract class MFWCoreFramework
 	{
 		self::loadJs( true, $debug );
 		self::loadCss( true, true, 'ltr', array(), $debug );
+		self::loadFontAwesome( $debug );
 	}
 
 	/**
@@ -91,6 +92,8 @@ abstract class MFWCoreFramework
 		} else {
 			JHtml::_('script', 'media/' . MFWDIRNAME . '/package/bootstrap/js/bootstrap.js', false, false, false, false, $debug);
 		}
+
+		JHtml::_('script', 'media/' . MFWDIRNAME . '/js/core/mfw.js', false, false, false, false);
 
 		self::$loaded[__METHOD__] = true;
 
@@ -144,6 +147,8 @@ abstract class MFWCoreFramework
 			}
 		}
 
+		// Load the core mfw CSS Class
+		JHtml::_('stylesheet', MFWDIRNAME . '/mfw.css', $attribs, true);
 
 // TODO: Check Support for RTL
 //		// Load Bootstrap RTL CSS
@@ -151,6 +156,43 @@ abstract class MFWCoreFramework
 //		{
 //			JHtml::_('stylesheet', MFWDIRNAME . '/bootstrap-rtl.css', $attribs, true);
 //		}
+
+		self::$loaded[__METHOD__] = true;
+
+		return;
+	}
+
+
+	/**
+	 * Loads Font-Awesome CSS files
+	 *
+	 * @param     mixed    $debug    Debug (Standard: null)
+	 *
+	 * @return    void
+	 *
+	 * @since     1.0
+	 */
+	public static function loadFontAwesome( $debug = null )
+	{
+		// Only load once
+		if ( !empty(self::$loaded[__METHOD__]) )
+		{
+			return;
+		}
+
+		// If no debugging value is set, use the configuration setting
+		if ( $debug === null )
+		{
+			$config = JFactory::getConfig();
+			$debug = (boolean) $config->get('debug');
+		}
+
+		// Load FontAwesome CSS
+		if ( !$debug ) {
+			JHtml::_('stylesheet', 'media/' . MFWDIRNAME . '/package/font-awesome/css/font-awesome.min.css', false, false);
+		} else {
+			JHtml::_('stylesheet', 'media/' . MFWDIRNAME . '/package/font-awesome/css/font-awesome.css', false, false);
+		}
 
 		self::$loaded[__METHOD__] = true;
 
