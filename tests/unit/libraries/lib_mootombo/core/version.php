@@ -19,10 +19,10 @@ defined('_MFWRA') or die;
 /**
  * Version information class for the MOOTOMBO!Framework.
  */
-final class MFW
+final class MFWVersion
 {
 	// Product name.
-	const MFWPRODUCT = 'MOOTOMBO!RDK';
+	const MFWPRODUCT = 'MOOTOMBO!Framework';
 
 	// Release version.
 	const MFWRELEASE = '1.0';
@@ -52,7 +52,7 @@ final class MFW
 	const MFWCOPYRIGHT = 'Copyright (C) 1997 - 2013 devXive - research and development. All rights reserved.';
 
 	// Link text.
-	const MFWLINK_TEXT = '<a href="http://devxive.com/mootombo/framework">The MOOTOMBO!Framework</a> is Free Software released under the GNU General Public License.';
+	const MFWLINK_TEXT = 'The <a href="http://devxive.com/mootombo/framework">MOOTOMBO!Framework</a> is Free Software released under the GNU General Public License.';
 
 	/**
 	 * Compares two a "PHP standardized" version number against the current MOOTOMBO!Framework version.
