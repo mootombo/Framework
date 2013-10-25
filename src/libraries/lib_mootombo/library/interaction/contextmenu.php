@@ -24,7 +24,49 @@ defined('_MFWRA') or die;
  */
 abstract class MFWInteractionContextmenu
 {
-	function test() {
-		echo 'it works, too';
+	/**
+	 * @var    array  Array containing information for loaded files
+	 * @since  1.0
+	 */
+	protected static $loaded = array();
+
+	/**
+	 * Add javascript functions for right click context menus
+	 *
+	 * @param     string    $selector    Common id for the contextmenu
+	 * @param     array     $params      Time in milliseconds the alert box should remove
+	 *
+	 * @return    void
+	 *
+	 * @since     1.0
+	 */
+	public function init( $selector = 'bsxContextMenu', $target = '.bsxCMTarget', $params = array() )
+	{
+		$sig = md5( serialize( array($selector, $params) ) );
+
+		// Only load once
+		if (isset(self::$loaded[__METHOD__][$sig]))
+		{
+			return;
+		}
+
+		// Load Dependencies
+		MFWJavascriptDependencies::contextMenu();
+
+		// Setup options object
+//		$opt['bindings'] = (isset($params['bindings']) && ($params['bindings'])) ? $params['bindings'] : null;
+
+//		$options = NFWHtml::getJSObject($opt);
+
+		// Attach the function to the document
+//		JFactory::getDocument()->addScriptDeclaration(
+//			"jQuery(function($){
+//				$('#." . $selector . "').bsxContextMenu('" . $target . "', " . $options . ");
+//			});\n"
+//		);
+
+		self::$loaded[__METHOD__][$sig] = true;
+
+		return;
 	}
 }
