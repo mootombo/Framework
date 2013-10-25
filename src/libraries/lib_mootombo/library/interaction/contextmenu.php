@@ -40,7 +40,7 @@ abstract class MFWInteractionContextmenu
 	 *
 	 * @since     1.0
 	 */
-	public function init( $selector = 'bsxContextMenu', $target = '.bsxCMTarget', $params = array() )
+	public function load( $selector = 'bsxContextMenu', $target = '.bsxCMTarget', $params = array() )
 	{
 		$sig = md5( serialize( array($selector, $params) ) );
 
