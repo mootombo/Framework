@@ -41,7 +41,7 @@ if (!defined('MFWPATH_ROOT'))
 }
 if (!defined('MFWPATH_LIBRARIES'))
 {
-	define('MFWPATH_LIBRARIES', MFWPATH_TESTS . '/libraries'));
+	define('MFWPATH_LIBRARIES', MFWPATH_TESTS . '/libraries');
 }
 
 // Import the entrypoint
