@@ -10,11 +10,9 @@
  * Date: 22 October 2013
  *
  * For documentation visit http://devxive.com/
- *
  */
 
 (function ($) {
-
     $.fn.bsxContextMenu = function (target, options) {
 
         var $bsContextMenu = $(this);
@@ -50,8 +48,8 @@
                 display: settings.dropdownMenu.display,
                 position: settings.dropdownMenu.position,
                 zIndex: settings.dropdownMenu.zIndex,
-                left: e.pageX,
-                top: e.pageY
+                left: e.pageX + 10,
+                top: e.pageY - 40
             });
             return false;
         });
@@ -102,5 +100,4 @@
             $(target).on('selectstart', function( event ) { event.preventDefault(); });
         }
     }
-
 }( jQuery ));
