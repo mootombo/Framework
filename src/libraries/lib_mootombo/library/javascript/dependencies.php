@@ -36,27 +36,6 @@ abstract class MFWJavascriptDependencies
 
 
 	/**
-	 * Global Debug Method
-	 *
-	 * @param     array      $debug    Debug (Standard: null)
-	 *
-	 * @return    boolean              Debug state
-	 *
-	 * @since     1.0
-	 */
-	function debug( $debug = null ) {
-		// If no debugging value is set, use the configuration setting
-		if ($debug === null)
-		{
-			$config = JFactory::getConfig();
-			$debug = (boolean) $config->get('debug');
-		}
-
-		return $debug;
-	}
-
-
-	/**
 	 * Framework File Importer Method
 	 *
 	 * @param     array    $files    Files to be load
@@ -68,7 +47,7 @@ abstract class MFWJavascriptDependencies
 	 *
 	 * @since     1.0
 	 */
-	function import( $files ) {
+	function import( $files, $debug = null ) {
 		if ( $files->local ) {
 			foreach( $files->local as $file) {
 				if ( preg_match('/\.css/', $file) ) {
@@ -108,7 +87,7 @@ abstract class MFWJavascriptDependencies
 	{
 		$files = new StdClass();
 
-		$sig = md5( serialize( array($options) ) );
+		$sig = md5( serialize( array(true) ) );
 
 		// Only load once
 		if ( isset( self::$loaded[__METHOD__][$sig] ) ) 
@@ -116,21 +95,64 @@ abstract class MFWJavascriptDependencies
 			return;
 		}
 
-		// Get the debug state
-		$debug = debug( $debug );
+		// Get the debug state from core debug method
+		$debug = MFWCoreDebug::init( $debug );
 
 		// Include JS framework (Core JQuery, Core Bootstrap)
-		NFWCoreFramework::loadMFW( $debug );
+//		MFWCoreFramework::loadMFW( $debug );
 
 		$min = $debug ? '' : '.min';
 
 		$files->local = array(
-			'bsxcontextmenu.jquery.js'
+			'jquery.bsxcontextmenu.js'
 		);
 
 		$files->remote = array();
 
-		self::import( $files );
+		self::import( $files, $debug );
+
+		self::$loaded[__METHOD__][$sig] = true;
+
+		return;
+	}
+
+
+	/**
+	 * reject
+	 *
+	 * @param     mixed    $debug    Debug (Standard: null)
+	 *
+	 * @return    void
+	 *
+	 * @since     1.0
+	 */
+	public function reject( $debug = null )
+	{
+		$files = new StdClass();
+
+		$sig = md5( serialize( array(true) ) );
+
+		// Only load once
+		if ( isset( self::$loaded[__METHOD__][$sig] ) ) 
+		{
+			return;
+		}
+
+		// Get the debug state from core debug method
+		$debug = MFWCoreDebug::init( $debug );
+
+		// Include JS framework (Core JQuery, Core Bootstrap)
+//		MFWCoreFramework::loadMFW( $debug );
+
+		$min = $debug ? '' : '.min';
+
+		$files->local = array(
+			'jquery.bsxreject.js'
+		);
+
+		$files->remote = array();
+
+		self::import( $files, $debug );
 
 		self::$loaded[__METHOD__][$sig] = true;
 
@@ -163,11 +185,11 @@ abstract class MFWJavascriptDependencies
 			return;
 		}
 
-		// Get the debug state
-		$debug = debug( $debug );
+		// Get the debug state from core debug method
+		$debug = MFWCoreDebug::init( $debug );
 
 		// Include JS framework (Core JQuery, Core Bootstrap)
-		NFWCoreFramework::loadMFW( $debug );
+		MFWCoreFramework::loadMFW( $debug );
 
 		$min = $debug ? '' : '.min';
 
@@ -179,7 +201,7 @@ abstract class MFWJavascriptDependencies
 
 		$theme = $options['theme'] ? $options['theme'] : false;
 
-		self::import( $files );
+		self::import( $files, $debug );
 
 		self::$loaded[__METHOD__][$sig] = true;
 
@@ -209,11 +231,11 @@ abstract class MFWJavascriptDependencies
 			return;
 		}
 
-		// Get the debug state
-		$debug = debug( $debug );
+		// Get the debug state from core debug method
+		$debug = MFWCoreDebug::init( $debug );
 
 		// Include JS framework (Core JQuery, Core Bootstrap)
-		NFWCoreFramework::loadMFW( $debug );
+		MFWCoreFramework::loadMFW( $debug );
 
 		$min = $debug ? '' : '.min';
 
@@ -227,7 +249,7 @@ abstract class MFWJavascriptDependencies
 			'http://remote.css'
 		);
 
-		self::import( $files );
+		self::import( $files, $debug );
 
 		self::$loaded[__METHOD__][$sig] = true;
 
