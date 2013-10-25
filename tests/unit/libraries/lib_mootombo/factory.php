@@ -18,7 +18,7 @@ defined('_MFWRA') or die;
 
 // Set the MOOTOMBO!Framework root path as a constant if necessary.
 if ( !defined('MFWPATH_FRAMEWORK') ) {
-	define('MFWPATH_FRAMEWORK', MFWPATH_TESTS . '/libraries/lib_mfw');
+	define('MFWPATH_FRAMEWORK', MFWPATH_TESTS . '/libraries/lib_mootombo');
 }
 
 // Define version
