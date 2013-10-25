@@ -18,12 +18,13 @@ defined('_MFWRA') or die;
 
 // Set the MOOTOMBO!Framework root path as a constant if necessary.
 if ( !defined('MFWPATH_FRAMEWORK') ) {
-	define('MFWPATH_FRAMEWORK', MFWPATH_TESTS . '/libraries/lib_mootombo');
+	define('MFWPATH_FRAMEWORK', MFWPATH_LIBRARIES . '/lib_mootombo/);
 }
 
 // Define version
 if ( !defined('MFWVERSION') ) {
 	require_once (MFWPATH_FRAMEWORK . '/core/version.php');
+
 	$mfwversion = new MFWVersion();
 	define( 'MFWVERSION', $mfwversion->getShortVersion() );
 }
