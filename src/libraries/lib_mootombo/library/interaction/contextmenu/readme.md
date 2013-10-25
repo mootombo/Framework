@@ -249,3 +249,11 @@ Inspired by:
 
 ## GIST
 https://gist.github.com/lahmizzar/7988c7a7ae4c290e4594.js
+
+
+## Style optimization
+```
+.dropdown-menu .divider {
+    margin: 5px 0;
+}
+```
