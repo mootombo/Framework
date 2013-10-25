@@ -257,3 +257,31 @@ https://gist.github.com/lahmizzar/7988c7a7ae4c290e4594.js
     margin: 5px 0;
 }
 ```
+
+## Bindings example
+``` js
+$('#bsxContextMenu').bsxContextMenu('.person', {
+    bindings: {
+        'open': function (t) {
+            var target = $(t).data('personid');
+            alert('PersonId is ' + target + '\nAction was data-menu="open"');
+        },
+        'email': function (t) {
+            var target = $(t).data('personid');
+            alert('PersonId is ' + target + '\nAction was data-menu="email"');
+        },
+        'save': function (t) {
+            var target = $(t).data('personid');
+            alert('PersonId is ' + target + '\nAction was data-menu="save"');
+        },
+        'delete': function (t) {
+            var target = $(t).data('personid');
+            alert('PersonId is ' + target + '\nAction was data-menu="delete"');
+        },
+        'paste': function (t) {
+            var target = $(t).data('personid');
+            alert('PersonId is ' + target + '\nAction was data-menu="paste"');
+        }
+    }
+});
+```
