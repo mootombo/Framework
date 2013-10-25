@@ -45,5 +45,4 @@ if (!defined('MFWPATH_LIBRARIES'))
 }
 
 // Import the entrypoint
-echo MFWPATH_LIBRARIES;
 require_once MFWPATH_LIBRARIES . '/lib_mootombo/factory.php';
