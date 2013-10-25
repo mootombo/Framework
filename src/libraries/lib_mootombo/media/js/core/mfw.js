@@ -40,6 +40,8 @@ MFW.web.location = location.protocol;
   * loadjscssfile("myscript.js", "js") //dynamically load and add this .js file
   * loadjscssfile("javascript.php", "js") //dynamically load "javascript.php" as a JavaScript file
   * loadjscssfile("mystyle.css", "css") ////dynamically load and add this .css file
+  *
+  * Based on: http://www.javascriptkit.com/javatutors/loadjavascriptcss.shtml
   */
   function loadJsCssFile(filename, filetype, debug) {
 	// Check first if we already have this file in space
