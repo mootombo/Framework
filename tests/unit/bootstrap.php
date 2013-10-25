@@ -31,10 +31,6 @@ if (!defined('MFWPATH_TESTS'))
 {
 	define('MFWPATH_TESTS', realpath(__DIR__));
 }
-if (!defined('MFWPATH_LIBRARIES'))
-{
-	define('MFWPATH_LIBRARIES', realpath(dirname(dirname(__DIR__)) . '/libraries'));
-}
 if (!defined('MFWPATH_BASE'))
 {
 	define('MFWPATH_BASE', realpath(dirname(dirname(__DIR__))));
@@ -43,7 +39,11 @@ if (!defined('MFWPATH_ROOT'))
 {
 	define('MFWPATH_ROOT', realpath(MFWPATH_BASE));
 }
+if (!defined('MFWPATH_LIBRARIES'))
+{
+	define('MFWPATH_LIBRARIES', MFWPATH_TESTS . '/libraries'));
+}
 
 // Import the entrypoint
 echo MFWPATH_LIBRARIES;
-// require_once MFWPATH_LIBRARIES . '/lib_mootombo/factory.php';
+require_once MFWPATH_LIBRARIES . '/lib_mootombo/factory.php';
