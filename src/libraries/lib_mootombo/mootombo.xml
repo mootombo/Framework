@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension type="library" method="upgrade" version="3.1">
+	<name>MOOTOMBO!Framework</name>
+	<libraryname>mootombo</libraryname>
+	<author>devXive</author>
+	<creationDate>2013-11-01</creationDate>
+	<copyright>Copyright (C) 1997 - 2013 devXive - research and development. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later.</license>
+	<authorEmail>support@devxive.com</authorEmail>
+	<authorUrl>www.devxive.com</authorUrl>
+	<version>1.0.0</version>
+	<description>A sophisticated, super-flexible PHP, Javascript and CSS framework that is easy to integrate, simple to use, and powerful enough to handle anything we want to throw at it. Do not remove!</description>
+
+	<files folder="library" destination="mootombo">
+		<folder>core</folder>
+		<folder>html</folder>
+		<folder>interaction</folder>
+		<folder>javascript</folder>
+		<file>factory.php</file>
+		<file>index.html</file>
+	</files>
+
+	<media folder="media" destination="mootombo">
+		<folder>css</folder>
+		<folder>font</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+		<folder>package</folder>
+		<file>index.html</file>
+	</media>
+
+	<!-- Extension Update Specification -->
+	<updateservers>
+		<server name="MOOTOMBO Update Server" priority="1" type="collection">https://update.mootombo.net/framework.xml</server>
+	</updateservers>
+</extension>
