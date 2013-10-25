@@ -1,4 +1,6 @@
-# Contributing to the MOOTOMBO!Framework - A PHP, Javascript and CSS Collection for MOOTOMBO Software Products (SP's)
+Contributing to the MOOTOMBO!Framework
+====
+A PHP, Javascript and CSS Collection for MOOTOMBO Software Products (SP's)
 
 Pull requests are merged via Github, you can find the documentation about how to fork a repository and start contributing to MOOTOMBO here [https://help.github.com/articles/fork-a-repo](https://help.github.com/articles/fork-a-repo).
 
