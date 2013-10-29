@@ -90,8 +90,10 @@ class plgSystemMootombo extends JPlugin
 	 */
 	public function onAfterInitialise()
 	{
-		// Load the JS/CSS Framework
-//		MFWCoreFramework::loadMFW();
+		if ( JFactory::getApplication()->isSite() ) {
+			// Load the JS/CSS Framework
+			MFWCoreFramework::loadMFW();
+		}
 	}
 
 
@@ -101,16 +103,6 @@ class plgSystemMootombo extends JPlugin
 	public function onBeforeCompileHead()
 	{
 		MFWHtmlHead::test();
-
-
-
-
-		// LOAD ONLY SINGLE PARTS DURING MIGRATION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-		JHtml::_('script', 'media/' . MFWDIRNAME . '/js/core/mfw.js', false, false, false, false);
-		JHtml::_('stylesheet', MFWDIRNAME . '/mfw.css', false, true);
-//		MFWCoreFramework::loadCss( true, true, 'ltr', array(), null );
-		MFWCoreFramework::loadFontAwesome();
-
 
 		// TODO: Load Extra header information on site and admin! (Extra Viewports, facebook, google, windows, apple, etc....)
 	}
