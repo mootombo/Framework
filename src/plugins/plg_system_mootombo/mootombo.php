@@ -102,7 +102,7 @@ class plgSystemMootombo extends JPlugin
 	 */
 	public function onBeforeCompileHead()
 	{
-		MFWHtmlHead::test();
+//		MFWHtmlHead::test();
 
 		// TODO: Load Extra header information on site and admin! (Extra Viewports, facebook, google, windows, apple, etc....)
 	}
