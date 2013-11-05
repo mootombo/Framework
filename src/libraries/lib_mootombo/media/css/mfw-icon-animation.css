@@ -1,6 +1,6 @@
 /**
- * @package     XAP.Apps
- * @subpackage  Nawala.Framework
+ * @package     MOOTOMBO!WebOS
+ * @subpackage  Framework
  *
  * @copyright   Copyright (C) 1997 - 2013 devXive - research and development. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
@@ -8,7 +8,6 @@
 
 /* ========== WRENCHING ANIMATION ========== */
 .icon-animated-wrench {
-	display: inline-block;
 	-webkit-animation: wrenching 2.5s infinite ease;
 	-moz-animation: wrenching 2.5s infinite ease;
 	-ms-animation: wrenching 2.5s infinite ease;
@@ -201,7 +200,6 @@
 
 /* ========== VERTICAL ANIMATION ========== */
 .icon-animated-vertical {
-	display: inline-block;
 	-webkit-animation: vertical 2.0s infinite ease 2.0s;
 	-moz-animation: vertical 2.0s infinite ease 2.0s;
 	-ms-animation: vertical 2.0s infinite ease 2.0s;
@@ -257,4 +255,192 @@
 	16% { transform: translate(0,-3px); }
 	20% { transform: translate(0,3px); }
 	22% { transform: translate(0,0); }
+}
+
+/* ========== HAND-POINTER ANIMATION ========== */
+.icon-animated-handpointer {
+	-moz-animation: handpointer 2.0s infinite ease 2.0s;
+	-webkit-animation: handpointer 2.0s infinite ease 2.0s;
+	-ms-animation: handpointer 2.0s infinite ease 2.0s;
+	-o-animation: handpointer 2.0s 2.0s infinite ease 2.0s;
+	animation: handpointer 2.0s infinite ease 2.0s;
+}
+
+@-webkit-keyframes handpointer {
+	0% { -webkit-transform: translate(0, 0); }
+	6% { -webkit-transform: translate(5px, 0); }
+	12% { -webkit-transform: translate(0, 0); }
+	18% { -webkit-transform: translate(5px, 0); }
+	24% { -webkit-transform: translate(0, 0); }
+	30% { -webkit-transform: translate(5px, 0); }
+	36% { -webkit-transform: translate(0, 0); }
+}
+
+@-moz-keyframes handpointer {
+	0% { -moz-transform: translate(0, 0); }
+	6% { -moz-transform: translate(5px, 0); }
+	12% { -moz-transform: translate(0, 0); }
+	18% { -moz-transform: translate(5px, 0); }
+	24% { -moz-transform: translate(0, 0); }
+	30% { -moz-transform: translate(5px, 0); }
+	36% { -moz-transform: translate(0, 0); }
+}
+
+@-ms-keyframes handpointer {
+	0% { -ms-transform: translate(0, 0); }
+	6% { -ms-transform: translate(5px, 0); }
+	12% { -ms-transform: translate(0, 0); }
+	18% { -ms-transform: translate(5px, 0); }
+	24% { -ms-transform: translate(0, 0); }
+	30% { -ms-transform: translate(5px, 0); }
+	36% { -ms-transform: translate(0, 0); }
+}
+
+@-o-keyframes handpointer {
+	0% { -o-transform: translate(0, 0); }
+	6% { -o-transform: translate(5px, 0); }
+	12% { -o-transform: translate(0, 0); }
+	18% { -o-transform: translate(5px, 0); }
+	24% { -o-transform: translate(0, 0); }
+	30% { -o-transform: translate(5px, 0); }
+	36% { -o-transform: translate(0, 0); }
+}
+
+@keyframes handpointer {
+	0% { transform: translate(0, 0); }
+	6% { transform: translate(5px, 0); }
+	12% { transform: translate(0, 0); }
+	18% { transform: translate(5px, 0); }
+	24% { transform: translate(0, 0); }
+	30% { transform: translate(5px, 0); }
+	36% { transform: translate(0, 0); }
+}
+
+
+
+/* ========== PULSATE ANIMATION ========== */
+.icon-animated-pulsate {
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.icon-animated-pulsate {
+	-webkit-animation: pulsate 1.5s infinite ease 75ms;
+	-moz-animation: pulsate 1.5s infinite ease-out 75ms;
+	-ms-animation: pulsate 1.5s infinite ease-out 75ms;
+	-o-animation: pulsate 1.5s infinite ease-out 75ms;
+	animation: pulsate 1.5s infinite ease-out 75ms;
+}
+
+@-webkit-keyframes pulsate {
+	0% {
+		box-shadow: none;
+		opacity: 1;
+		-webkit-transform: scale(0.9);
+	}
+	40% {
+		box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+		opacity: 0.8;
+		-webkit-transform: scale(1.1);
+	}
+	60% {
+		box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+		opacity: 0.9;
+	}
+	100% {
+		box-shadow: none;
+		opacity: 1;
+		-webkit-transform: scale(0.9);
+	}
+}
+
+@-moz-keyframes pulsate {
+	0% {
+		box-shadow: none;
+		opacity: 1;
+		-moz-transform: scale(0.9);
+	}
+	40% {
+		box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+		opacity: 0.8;
+		-moz-transform: scale(1.1);
+	}
+	60% {
+		box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+		opacity: 0.9;
+	}
+	100% {
+		box-shadow: none;
+		opacity: 1;
+		-moz-transform: scale(0.9);
+	}
+}
+
+@-ms-keyframes pulsate {
+	0% {
+		box-shadow: none;
+		opacity: 1;
+		-ms-transform: scale(0.9);
+	}
+	40% {
+		box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+		opacity: 0.8;
+		-ms-transform: scale(1.1);
+	}
+	60% {
+		box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+		opacity: 0.9;
+	}
+	100% {
+		box-shadow: none;
+		opacity: 1;
+		-ms-transform: scale(0.9);
+	}
+}
+
+@-o-keyframes pulsate {
+	0% {
+		box-shadow: none;
+		opacity: 1;
+		-o-transform: scale(0.9);
+	}
+	40% {
+		box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+		opacity: 0.8;
+		-o-transform: scale(1.1);
+	}
+	60% {
+		box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+		opacity: 0.9;
+	}
+	100% {
+		box-shadow: none;
+		opacity: 1;
+		-o-transform: scale(0.9);
+	}
+}
+
+@keyframes pulsate {
+	0% {
+		box-shadow: none;
+		opacity: 1;
+		-webkit-transform: scale(0.9);
+	}
+	40% {
+		box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+		opacity: 0.8;
+		-webkit-transform: scale(1.1);
+	}
+	60% {
+		box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+		opacity: 0.9;
+	}
+	100% {
+		box-shadow: none;
+		opacity: 1;
+		-webkit-transform: scale(0.9);
+	}
 }

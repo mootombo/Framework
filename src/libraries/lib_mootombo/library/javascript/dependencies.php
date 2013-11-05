@@ -210,6 +210,53 @@ abstract class MFWJavascriptDependencies
 
 
 	/**
+	 * loadIcon
+	 *
+	 * @param     array    $options    Options (optional)
+	 * @param     mixed    $debug      Debug (Standard: null)
+	 *
+	 * @return    void
+	 *
+	 * @since     1.0
+	 */
+	public function loadIcon( $options = array(), $debug = null )
+	{
+		$files = new StdClass();
+
+		$sig = md5( serialize( array($options) ) );
+
+		// Only load once
+		if (isset(self::$loaded[__METHOD__][$sig]))
+		{
+			return;
+		}
+
+		// Get the debug state from core debug method
+		$debug = MFWCoreDebug::init( $debug );
+
+		// Include JS framework (Core JQuery, Core Bootstrap)
+		MFWCoreFramework::loadMFW( $debug );
+
+		$min = $debug ? '' : '.min';
+
+		$files->local = array(
+			'mfw-icon-animation.css'
+		);
+
+		$files->remote = array();
+
+		self::import( $files, $debug );
+
+		self::$loaded[__METHOD__][$sig] = true;
+
+		return;
+	}
+
+
+
+
+
+	/**
 	 * Example
 	 *
 	 * @param     array    $options    Options (optional)
